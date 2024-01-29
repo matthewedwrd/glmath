@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(mylib C)
+project(glmath C)
 
 include_directories(include)
 
