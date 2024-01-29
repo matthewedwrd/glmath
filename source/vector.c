@@ -1,4 +1,4 @@
-#pragma once
+#include <glmath/glmath.h>
 
 /*
  *  MIT License
@@ -24,17 +24,25 @@
  *  SOFTWARE.
  */
 
-typedef union
+void glmath_vec2_add(vec2 *vector0, vec2 *vector1, vec2 *result)
 {
-    float value[16];
+    result->x = vector0->x + vector1->x;
+    result->y = vector0->y + vector1->y;
+}
 
-    struct
-    {
-        float m00, m01, m02, m03;
-        float m10, m11, m12, m13;
-        float m20, m21, m22, m23;
-        float m30, m31, m32, m33;
-    };
+void glmath_vec2_subtract(vec2 *vector0, vec2 *vector1, vec2 *result)
+{
+    result->x = vector0->x - vector1->x;
+    result->y = vector0->y - vector1->y;
+}
 
-    float matrix[4][4];
-} mat4;
+void glmath_vec2_scale(const vec2 *vector, float scalar, vec2 *result)
+{
+    result->x = vector->x * scalar;
+    result->y = vector->y * scalar;
+}
+
+void glmath_vec2_dot(vec2 *vector0, vec2 *vector1, float *result)
+{
+    *result = vector0->x * vector1->x + vector0->y * vector1->y;
+}
