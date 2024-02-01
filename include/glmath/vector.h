@@ -32,22 +32,22 @@
  */
 typedef union
 {
-    float value[2];
+	float value[2];
 
-    struct
-    {
-        float x, y;
-    };
+	struct
+	{
+		float x, y;
+	};
 
-    struct
-    {
-        float w, h;
-    };
+	struct
+	{
+		float w, h;
+	};
 
-    struct
-    {
-        float a, b;
-    };
+	struct
+	{
+		float a, b;
+	};
 } GLMvec2;
 
 /*
@@ -56,22 +56,22 @@ typedef union
  */
 typedef union
 {
-    float value[3];
+	float value[3];
 
-    struct
-    {
-        float x, y, z;
-    };
+	struct
+	{
+		float x, y, z;
+	};
 
-    struct
-    {
-        float a, b, c;
-    };
+	struct
+	{
+		float a, b, c;
+	};
 
-    struct
-    {
-        float r, g, b;
-    };
+	struct
+	{
+		float r, g, b;
+	};
 } GLMvec3;
 
 /*
@@ -80,32 +80,32 @@ typedef union
  */
 typedef union
 {
-    float value[4];
+	float value[4];
 
-    struct
-    {
-        float x, y, z, w;
-    };
+	struct
+	{
+		float x, y, z, w;
+	};
 
-    struct
-    {
-        float a, b, c, d;
-    };
+	struct
+	{
+		float a, b, c, d;
+	};
 
-    struct
-    {
-        float r, g, b, a;
-    };
+	struct
+	{
+		float r, g, b, a;
+	};
 } GLMvec4;
 
 /* Obtain the sum of two 2-dimensional values. */
-void glmath_vec2_add(vec2 *vector0, vec2 *vector1, vec2 *result);
+void glmath_vec2_add(GLMvec2 *vector0, GLMvec2 *vector1, GLMvec2 *result);
 
 /* Obtain the difference of two 2-dimensional values. */
-void glmath_vec2_subtract(vec2 *vector0, vec2 *vector1, vec2 *result);
+void glmath_vec2_subtract(GLMvec2 *vector0, GLMvec2 *vector1, GLMvec2 *result);
 
 /* Obtain the scaled version of a 2-dimensional value. */
-void glmath_vec2_scale(const vec2 *vector, float scalar, vec2 *result);
+void glmath_vec2_scale(GLMvec2 *vector, float scalar, GLMvec2 *result);
 
 /* Obtain the dot product of two 2-dimensional values. */
-void glmath_vec2_dot(vec2 *vector0, vec2 *vector1, float *result);
+void glmath_vec2_dot(GLMvec2 *vector0, GLMvec2 *vector1, float *result);

@@ -24,25 +24,25 @@
  *  SOFTWARE.
  */
 
-void glmath_vec2_add(vec2 *vector0, vec2 *vector1, vec2 *result)
+void glmath_vec2_add(GLMvec2 *vector0, GLMvec2 *vector1, GLMvec2 *result)
 {
     result->x = vector0->x + vector1->x;
     result->y = vector0->y + vector1->y;
 }
 
-void glmath_vec2_subtract(vec2 *vector0, vec2 *vector1, vec2 *result)
+void glmath_vec2_subtract(GLMvec2 *vector0, GLMvec2 *vector1, GLMvec2 *result)
 {
     result->x = vector0->x - vector1->x;
     result->y = vector0->y - vector1->y;
 }
 
-void glmath_vec2_scale(const vec2 *vector, float scalar, vec2 *result)
+void glmath_vec2_scale(GLMvec2 *vector, float scalar, GLMvec2 *result)
 {
     result->x = vector->x * scalar;
     result->y = vector->y * scalar;
 }
 
-void glmath_vec2_dot(vec2 *vector0, vec2 *vector1, float *result)
+void glmath_vec2_dot(GLMvec2 *vector0, GLMvec2 *vector1, float *result)
 {
     *result = vector0->x * vector1->x + vector0->y * vector1->y;
 }
