@@ -65,11 +65,6 @@ typedef union
 
 	struct
 	{
-		float a, b, c;
-	};
-
-	struct
-	{
 		float r, g, b;
 	};
 } GLMvec3;
@@ -85,11 +80,6 @@ typedef union
 	struct
 	{
 		float x, y, z, w;
-	};
-
-	struct
-	{
-		float a, b, c, d;
 	};
 
 	struct

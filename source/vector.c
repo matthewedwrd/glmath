@@ -1,4 +1,4 @@
-#include <glmath/glmath.h>
+#include <glmath/vector.h>
 
 /*
  *  MIT License
